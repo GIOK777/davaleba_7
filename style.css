@@ -107,4 +107,17 @@ main section div.mark_twain p{
 }
 
 
-main section div.about
+
+main section div.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+main section div.about div.about_me {
+    width: 355px;
+    height: 100px;
+}
+
+main section div.about div.experience {
+    width: 370px;
+    height: 150px;
+}
