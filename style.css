@@ -13,8 +13,9 @@ body {
 header{
     width: 100%;
     height: 240px; 
-    /* position: fixed; */
-    /* top: 0; */
+    background-color: white;
+    position: fixed;
+    top: 0;
 }
 header section{
     display: flex;
@@ -72,7 +73,7 @@ header nav ul li a{
 main {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 240px;
 }
 
 main section div.mark_twain {
@@ -81,7 +82,8 @@ main section div.mark_twain {
     background-color: #AAD6C1;
     margin-top: 50px;
 }
-main section div.mark_twain div.phrase {
+main section div.mark_twain span {
+    display: block;
     padding: 40px;
     font-size: 60px;
     color: white;
@@ -90,3 +92,19 @@ main section div.mark_twain div.phrase {
     content: ">";
     border-bottom: 1px solid red ;
 } */
+
+main section div.mark_twain hr {
+    width: 50px;
+    height: 0.5px;
+    margin-left: 40px;
+    background-color:white;
+}
+main section div.mark_twain p{
+    font-family: grotesk_font;
+    font-size: 18px;
+    color: white;
+    margin-left: 40px;
+}
+
+
+main section div.about
