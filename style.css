@@ -88,11 +88,6 @@ main section div.mark_twain span {
     font-size: 60px;
     color: white;
 }
-/* main section div.mark_twain div.phrase::after {
-    content: ">";
-    border-bottom: 1px solid red ;
-} */
-
 main section div.mark_twain hr {
     width: 50px;
     height: 0.5px;
@@ -108,16 +103,38 @@ main section div.mark_twain p{
 
 
 
+
+
+div.about div.lineclass {
+    width: 100%;
+    /* height: 30px; */
+    border-bottom: 1px solid black;
+}
+
 main section div.about {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "about_head about_head "
+    "about_me education"
+    "experience specialties";
 }
+div.about_head {
+    grid-area: about_head;
+}
+
 main section div.about div.about_me {
+    grid-area: about_me;
     width: 355px;
     height: 100px;
 }
-
+main section div.about div.education {
+    grid-area: education;
+}
+main section div.about div.specialties {
+    grid-area: specialties;
+}
 main section div.about div.experience {
+    grid-area: experience;
     width: 370px;
     height: 150px;
 }
